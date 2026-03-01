@@ -39,7 +39,7 @@ with st.sidebar:
     
     model_choice = st.selectbox(
         "🤖 Groq Model",
-        ["groq/llama-3.3-70b-versatile", "groq/llama3-8b-8192", "groq/mixtral-8x7b-32768"],
+        ["groq/llama-3.3-70b-versatile", "groq/llama-3.1-8b-instant", "groq/openai/gpt-oss-20b"],
         index=0
     )
     
@@ -125,3 +125,4 @@ if generate_btn:
             except Exception as e:
                 st.error(f"❌ Error: {str(e)}")
                 st.info("**Fixes:** Check API key, rate limits, or YouTube URL")
+
